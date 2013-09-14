@@ -9,7 +9,7 @@ Here is some example code
     
     wamp = require "cupholder"
 
-    client = new wamp.Client "ws://localhost:9000/", debug=true
+    client = new wamp.Client "ws://example.com:8080/", debug=true
     client.on "error", (e) -> console.error e
     client.on "open", () ->
         console.log "session opened"
