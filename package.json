@@ -1,0 +1,36 @@
+{
+    "name":         "cupholder",
+    "version":      "0.1-alpha",
+    "description":  "A simple coffeescript WAMP client.",
+    "homepage":     "https://github.com/ysobolev/cupholder",
+    "author":       "Yury Sobolev (yury.sobolev@gmail.com",
+    "keywords":     ["wamp", "autobahn", "coffeescript"],
+    "engines":      {"node": ">= 0.8"},
+    "dependencies":
+        {
+            "ws":           "~0.4.25",
+            "node-uuid":    "~1.4.1",
+            "node-promise": "~0.5.8",
+            "cryptojs":     "~2.5.3"
+        },
+    "repository":
+        {
+            "type": "git",
+            "url":  "https://github.com/ysobolev/cupholder"
+        },
+    "bugs":
+        {
+            "url":  "https://github.com/ysobolev/cupholder/issues"
+        },
+    "licenses":
+        [{
+            "type": "Public Domain",
+            "url":  "https://github.com/ysobolev/cupholder/blob/master/LICENSE"
+        }],
+    "main":         "lib/client",
+    "scripts":
+        {
+            "prepublish":   "coffee --compile --output lib/ src/*.coffee"
+        }
+}
+
