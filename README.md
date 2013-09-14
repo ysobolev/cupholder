@@ -5,6 +5,10 @@ cupholder
 
 A simple coffeescript WAMP client.
 
+The package is available in the npm registy. You can install it with
+
+    npm install cupholder
+
 Here is some example code
     
     wamp = require "cupholder"
